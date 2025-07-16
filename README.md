@@ -117,6 +117,7 @@ remote:
 To ssh://github.com/bakert/update-refs-test.git
  * [new branch]      HEAD -> branch-that-will-be-merged
 branch 'branch-that-will-be-merged' set up to track 'origin/branch-that-will-be-merged'.
+https://github.com/bakert/update-refs-test/pull/3
 ```
 
 At this point I merged branch-that-will-be-merged to main but I did NOT update local yet*
@@ -125,7 +126,7 @@ At this point I merged branch-that-will-be-merged to main but I did NOT update l
 
 The dev working on the stack doesn't know/care that someone has opened branch-that-will-be-merged as a PR and then merged it to main.
 
-https://github.com/bakert/update-refs-test/pull/3
+```
 [zarniwoop update-refs-test] (branch-that-will-be-merged ✔) git switch branch-3-in-stack
 Switched to branch 'branch-3-in-stack'
 [zarniwoop update-refs-test] (branch-3-in-stack ✔) gh pr create
